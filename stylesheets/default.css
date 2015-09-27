@@ -1,0 +1,182 @@
+/*******************************************************
+              Main page index.html
+*******************************************************/
+html {
+  background-color: #c9c9c9;
+  font-family: serif;
+  color:white;
+}
+
+p, li {color: white;
+}
+
+a:link{text-decoration: none;
+        color: white;
+}
+a:visited{text-decoration: none;
+          color: white;
+}
+a:hover{font-weight: bold;
+        color: white;
+        }
+
+header {
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: -1em;
+  margin-bottom: -.8em;
+}
+span{font-size: 1.2em;}
+
+.top-nav{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  background-color: #9ad3de;
+  height: 2em;
+  list-style: none;
+  margin-top: -3em;
+}
+
+.top-nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li {
+  float: left;
+  list-style: none;
+}
+
+.top-nav ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 0em 7em;
+  margin-left: 0em;
+  margin-right: -3em;
+  font-size: 1.3em;
+}
+
+.profile-pic{
+  display: block;
+  max-width: 100%;
+  margin: 4em auto 0em;
+  border-radius: 100%;
+}
+
+.intro h2{text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #9ad3de;}
+
+.intro p{text-align: center;}
+
+.socmed{
+  list-style: none;
+  text-align: center;
+  margin: 13em 21em;
+}
+
+.socmed nav{
+    background-color: #9ad3de;
+    height: 3em;
+    width: 77em;
+    margin-left: -22em;
+    margin-bottom; -1em;
+
+}
+.socmed ul{
+
+}
+
+.socmed li{
+display: block;
+float: left;
+padding: 0em 0em;
+text-align: center;
+width: 8em;
+}
+
+.socmed a{
+
+}
+.linked-img{
+height:2.5em;
+width: 2.5em;
+}
+
+.twit-img{
+height:3em;
+width: 3em;
+}
+
+
+/******************************************************
+                  blog index page
+******************************************************/
+
+
+.blog{
+text-align: center;
+font-size: 2em;
+margin-top: 2em;
+margin-bottom: 2em;
+background-color: #9ad3de;
+}
+
+.w1 h1{font-size: 70%;
+      margin-top: 3em;
+      margin-bottom: 0em;
+}
+.w1 p{display: block;
+      font-size: 53%;
+      margin-bottom: 0em;
+      margin-top: 0em;}
+
+.w2 h1{font-size: 70%;
+        margin-top:3em;
+        margin-bottom: 0;
+}
+.w2 p{display: block;
+      font-size: 53%;
+      margin-bottom: 0em;
+      margin-top: 0em;}
+
+.w3 h1{font-size: 70%;
+      margin-top: 3em;
+      margin-bottom: 0em;
+}
+
+.w3 p{display: block;
+      font-size: 53%;
+      margin-bottom: 0em;
+      margin-top: 0em;}
+
+.w4 h1{font-size: 70%;
+      margin-top: 3em;
+      margin-bottom: 0em;
+}
+.w4 p{display: block;
+      font-size: 53%;
+      margin-bottom: 0em;
+      margin-top: 0em;}s
+
+
+
+.left {float: left;
+    display: inline-block;
+    margin-left: 0em;
+    margin-right: 51em;
+    margin-top: -5em;
+    margin-bottom: 0em;
+    }
+
+
+.right {float: right;
+    display: inline-block;
+    margin-right: 3em;
+    margin-left: 0em;
+    margin-top: -15em;
+    margin-bottom: 0em;
+}
