@@ -162,6 +162,10 @@ background-color: #9ad3de;
       margin-bottom: 0em;
       margin-top: 0em;}s
 
+/********************************************************************************
+
+I was trying to make two rows of Blog posts but my class .left is not pull over.
+I have tried about everhting I can. Class .right works and is set the same layout.
 
 
 .left {float: left;
@@ -180,3 +184,6 @@ background-color: #9ad3de;
     margin-top: -15em;
     margin-bottom: 0em;
 }
+
+
+***********************************************************************************/
