@@ -4,7 +4,7 @@ general
 
 body{
  font-family: 'Changa One', sans-serif;
-
+ color: fff;
 }
 a{
 text-decoration: none;
@@ -191,7 +191,7 @@ colors
 /*site body*/
 body {
 background-color: #c9c9c9;
-  color: #999;
+  color: #4F4949;
 }
 
 /*blue header*/
@@ -211,7 +211,9 @@ h1, h2 {
  color: #fff;
 }
 
-
+h3 {
+  color: #89bdd3;
+}
 /***links**/
 a{
   color: #fff;
