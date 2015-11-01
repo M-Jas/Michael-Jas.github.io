@@ -1,0 +1,67 @@
+General Ruby INFO
+1- If/elsif/else
+The if statement is how we create a branch in our program flow. The if statement includes a true-or-false expression.
+The elsif is a secondary(or more) option for the loop to run through when the if statement is not executed.
+Else is executed if none of the previous test for the truth.
+
+
+2- unless/if not
+If not or != is a way to test the condition to be false.
+Unless is the more natural sounding way to do this.
+
+3- Case
+Case starts with an expression usually a single object or variable. The object is ran through each possible when statement and ended by a else clause. One will match and the code will execute.
+
+The when statement allows us to cascade over the series and look for the match to the condition.
+
+4- Unconditional loop
+Looping is when the code is executed over and over again until it reaches the desired end or it could also go on forever.
+
+The loop can be controlled with a counter
+example n = 1 loop do n = n + 1 break if n > 9.
+
+
+For Loop runs one time for each element.
+
+5- While Loop
+While loops allow you to run a loop while the give condition is true. Once condition is no longer true the code will stop running.
+
+example n = 1 while n < 11 puts n n = n + 1 as long as n is less than 11 the loop will keep running.
+
+6-Until
+Until is almost the same but it is reverse logic. The loop will run until it is no longer true. Executes code while conditional is false. An until statement's conditional is separated from code by the reserved word do, a newline, or a semicolon.
+
+example until $i > $num  do
+   puts("Inside the loop i = #$i" )
+   $i +=1;
+end
+
+7- each 178 example
+Each is a simple: you run each method on a collection object, and each is going to yield an item in the collection to your code block one at a time.
+example ary = [1,2,3,4,5]
+ary.each do |i|
+   puts i
+end
+
+8- array
+Array is a ordered collection of objects, ordered by idea of consecutive numerical index.
+Create an Array
+a = Array.new
+a = Array.new(n) can add as many index/elements you need to pass in an argument
+a = []
+
+9- Hashes
+A Hash is collection of objects consisting of a key value pairs. With keys, there can only be one in the list of hash. You may look up what the value using the key to access it.
+
+Create New Hash
+hash = {} Litteral
+hash = Hash.new empty hash
+Hash = Hash.new(n) hash with a specified amount
+
+Add to a Hash
+hash["New York"] = "NY" in the [key] -> the value follows.
+
+
+
+10 - Methods
+11 -examples
