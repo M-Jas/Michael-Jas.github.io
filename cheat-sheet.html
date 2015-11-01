@@ -1,67 +1,173 @@
-General Ruby INFO
-1- If/elsif/else
-The if statement is how we create a branch in our program flow. The if statement includes a true-or-false expression.
-The elsif is a secondary(or more) option for the loop to run through when the if statement is not executed.
-Else is executed if none of the previous test for the truth.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Michael Jasinski | Web Designer</title>
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/test.css">
+  <link rel="stylesheet" href="responsive.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Michael Jasinski</h1>
+        <h2>Web Designer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="http://michael-jas.github.io/blog/about.html">About</a></li><li><a href="portfolio">Portfolio</a></li>
+          <a  class="selected" href="http://michael-jas.github.io/blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+     </header>
+     <div id="wrapper">
+<h1>General Ruby INFO</h1>
+ <h3>If/elsif/else</h3>
+<p>The if statement is how we create a branch in our program flow. The if statement includes a true-or-false expression.</p>
+<p>The elsif is a secondary(or more) option for the loop to run through when the if statement is not executed.</p>
+<p>Else is executed if none of the previous test for the truth.</p>
 
 
-2- unless/if not
-If not or != is a way to test the condition to be false.
-Unless is the more natural sounding way to do this.
+ <h3>unless/if not</h3>
+<p>If not or != is a way to test the condition to be false.</p>
+<p>Unless is the more natural sounding way to do this.</p>
 
-3- Case
-Case starts with an expression usually a single object or variable. The object is ran through each possible when statement and ended by a else clause. One will match and the code will execute.
+ <h3>Case</h3>
+</p>Case starts with an expression usually a single object or variable. The object is ran through each possible when statement and ended by a else clause. One will match and the code will execute.</p>
+<p>The when statement allows us to cascade over the series and look for the match to the condition.</p>
 
-The when statement allows us to cascade over the series and look for the match to the condition.
+ <h3>Loops</h3>
+<p>Looping is when the code is executed over and over again until it reaches the desired end or it could also go on forever.
+</p>
+<p>The loop can be controlled with a counter
+example n = 1 loop do n = n + 1 break if n >  </p>
 
-4- Unconditional loop
-Looping is when the code is executed over and over again until it reaches the desired end or it could also go on forever.
+<h3>For</h3>
+<p>For Loop runs one time for each element.</p>
 
-The loop can be controlled with a counter
-example n = 1 loop do n = n + 1 break if n > 9.
+<h3>While</h3>
+<p>While loops allow you to run a loop while the give condition is true. Once condition is no longer true the code will stop running.</p>
 
+</p>example n = 1 while n < 11 puts n n = n + 1 as long as n is less than 11 the loop will keep running.</p>
 
-For Loop runs one time for each element.
+<h3>Until</h3>
+<p>Until is almost the same but it is reverse logic. The loop will run until it is no longer true. Executes code while conditional is false. An until statement's conditional is separated from code by the reserved word do, a newline, or a semicolon.</p>
 
-5- While Loop
-While loops allow you to run a loop while the give condition is true. Once condition is no longer true the code will stop running.
-
-example n = 1 while n < 11 puts n n = n + 1 as long as n is less than 11 the loop will keep running.
-
-6-Until
-Until is almost the same but it is reverse logic. The loop will run until it is no longer true. Executes code while conditional is false. An until statement's conditional is separated from code by the reserved word do, a newline, or a semicolon.
-
-example until $i > $num  do
+<p>example until $i > $num  do
    puts("Inside the loop i = #$i" )
    $i +=1;
 end
-
-7- each 178 example
-Each is a simple: you run each method on a collection object, and each is going to yield an item in the collection to your code block one at a time.
-example ary = [1,2,3,4,5]
+</p>
+<h3>each</h3>
+<p>Each is a simple: you run each method on a collection object, and each is going to yield an item in the collection to your code block one at a time.</p>
+<p>example ary = [1,2,3,4,5]
 ary.each do |i|
    puts i
 end
+</p>
+<h3>Array</h3>
+  <p>Array is a ordered collection of objects, ordered by idea of consecutive numerical index.</p>
+<h3> Create an Array</h3>
+<p>a = Array.new</p>
+<p>a = Array.new(n) can add as many index/elements you need to pass in an argument</p>
+<p>a = []</p>
 
-8- array
-Array is a ordered collection of objects, ordered by idea of consecutive numerical index.
-Create an Array
-a = Array.new
-a = Array.new(n) can add as many index/elements you need to pass in an argument
-a = []
+<h3>Hashes</h3>
+<p>A Hash is collection of objects consisting of a key value pairs. With keys, there can only be one in the list of hash. You may look up what the value using the key to access it.</p>
 
-9- Hashes
-A Hash is collection of objects consisting of a key value pairs. With keys, there can only be one in the list of hash. You may look up what the value using the key to access it.
+<h3>Create New Hash</h3>
+<p>hash = {} Litteral</p>
+<p>hash = Hash.new empty hash</p>
+<p>Hash = Hash.new(n) hash with a specified amount</p>
 
-Create New Hash
-hash = {} Litteral
-hash = Hash.new empty hash
-Hash = Hash.new(n) hash with a specified amount
+<h2>Add to a Hash</h2>
+<p>hash["New York"] = "NY" in the [key] -> the value follows.</p>
+<!-- __________________________________________ -->
+<h1>Methods</h1>
+<h3>Array</h3>
+<h3>concat</h3>
+<h2>concat(other_ary) → ary click to toggle source</h2><p>Appends the elements of other_ary to self. EX:[ "a", "b" ].concat( ["c", "d"] ) #=> [ "a", "b", "c", "d" ]</p>
 
-Add to a Hash
-hash["New York"] = "NY" in the [key] -> the value follows.
+<h3>each</h3>
+<h2>each {|item| block } → ary</h2>
+<p>Calls block once for each element in self, passing that element as a parameter. EX: a.each {|x| print x, " -- " }</p>
+
+<h3>fetch</h3>
+<h2>fetch(index) → obj</h2>
+<p>Tries to return the element at position index. EX: a.fetch(1) </p>
+
+<h3>include?</h3>
+<h2>include?(obj) → true or false</h2>
+<p>Returns true if the given object is present in self (that is, if any object == anObject), false otherwise. EX: a.include?("b")  </p>
+
+<h3>insert</h3>
+<h2>insert(index, obj...) → ary</h2>
+<p>Inserts the given values before the element with the given index (which may be negative) EX: a.insert(2, 99)   </p>
 
 
+<h3>rotate</h3>
+<h2>rotate(cnt=1) → new_ary</h2>
+<p>Returns new array by rotating self so that the element at cnt in self is the first element of the new array. If cnt is negative then it rotates in the opposite direction. EX: a.rotate(2)  #=> ["c", "d", "a", "b"]  </p>
 
-10 - Methods
-11 -examples
+<h3>transpose</h3>
+<h2>transpose → new_ary</h2>
+<p>Assumes that self is an array of arrays and transposes the rows and columns. EX: a = [[1,2], [3,4], [5,6]]
+a.transpose   #=> [[1, 3, 5], [2, 4, 6]] </p>
+
+<h3>Hash</h3>
+
+<h3>to_a → array</h3>
+<p>Converts hsh to a nested array of [ key, value ] arrays. EX: h = { "c" => 300, "a" => 100, "d" => 400, "c" => 300  }
+h.to_a   #=> [["c", 300], ["a", 100], ["d", 400]]</p>
+
+<h3>each {| key, value | block } → hsh</h3>
+<p>Calls block once for each key in hsh, passing the key-value pair as parameters. EX: h = { "a" => 100, "b" => 200 }
+h.each {|key, value| puts "#{key} is #{value}" }</p>
+
+
+<h3>Enumerable</h3>
+<h3>each_with_object</h3>
+<h2>each_with_object(obj) {|(*args), memo_obj| ... } → obj click to toggle source
+</h2>
+<p>Iterates the given block for each element with an arbitrary object given, and returns the initially given object. EX: evens = (1..10).each_with_object([]) {|i, a| a << i*2 }
+#=> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20] </p>
+
+<h3>each_with_index</h3>
+<h2>each_with_index(*args) {|obj, i| block } → enum
+</h2>
+<p>Calls block with two arguments, the item and its index, for each item in enum. Given arguments are passed through to each(). EX: each_with_index {|item, index|
+  hash[item] = index
+}
+hash   #=> {"cat"=>0, "dog"=>1, "wombat"=>2} </p>
+
+<h3>zip</h3>
+<h2>zip(arg, ...) → an_array_of_array
+</h2>
+<p>Takes one element from enum and merges corresponding elements from each args. This generates a sequence of n-element arrays, where n is one more than the count of arguments. a = [ 4, 5, 6 ]
+b = [ 7, 8, 9 ]
+
+[1,2,3].zip(a, b)      #=> [[1, 4, 7], [2, 5, 8], [3, 6, 9]] EX: each_with_index {|item, index|
+  hash[item] = index
+}
+hash   #=> {"cat"=>0, "dog"=>1, "wombat"=>2} </p>
+
+
+    <p> <a href="http://twitter.com/the_michael8"> @the_michael8 </a></p>
+
+       </section>
+      <footer>
+        <a href="http://twitter.com/the_michael8"><img src="imgs/twitter.png" alt="Twitter Logo"
+                 class="social-icon">   </a>
+        </a>
+        <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US"> <img src="imgs/linkedin.png" class="social-icon"> </a>
+
+        <p>&copy; 2015 MJ</p>
+      </footer>
+     </div>
+    </body>
+
+</html>
