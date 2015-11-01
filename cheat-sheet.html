@@ -84,7 +84,7 @@ end
 <p>hash = Hash.new empty hash</p>
 <p>Hash = Hash.new(n) hash with a specified amount</p>
 
-<h2>Add to a Hash</h2>
+<h3>Add to a Hash</h3>
 <p>hash["New York"] = "NY" in the [key] -> the value follows.</p>
 <!-- __________________________________________ -->
 <h1>Methods</h1>
@@ -114,17 +114,19 @@ end
 <p>Returns new array by rotating self so that the element at cnt in self is the first element of the new array. If cnt is negative then it rotates in the opposite direction. EX: a.rotate(2)  #=> ["c", "d", "a", "b"]  </p>
 
 <h3>transpose</h3>
+
 <h2>transpose → new_ary</h2>
 <p>Assumes that self is an array of arrays and transposes the rows and columns. EX: a = [[1,2], [3,4], [5,6]]
 a.transpose   #=> [[1, 3, 5], [2, 4, 6]] </p>
 
 <h3>Hash</h3>
 
-<h3>to_a → array</h3>
+<h2>to_a → array</h2>
 <p>Converts hsh to a nested array of [ key, value ] arrays. EX: h = { "c" => 300, "a" => 100, "d" => 400, "c" => 300  }
 h.to_a   #=> [["c", 300], ["a", 100], ["d", 400]]</p>
 
-<h3>each {| key, value | block } → hsh</h3>
+<h3>each</h3>
+<h2>each {| key, value | block } → hsh</h2>
 <p>Calls block once for each key in hsh, passing the key-value pair as parameters. EX: h = { "a" => 100, "b" => 200 }
 h.each {|key, value| puts "#{key} is #{value}" }</p>
 
