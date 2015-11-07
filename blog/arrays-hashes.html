@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Michael Jasinski | Web Designer</title>
-  <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../stylessheets/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../stylesheets/test.css">
      <link rel="stylesheet" href="../responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
+     <header>
       <a href="index.html" id="logo">
         <h1>Michael Jasinski</h1>
         <h2>Web Designer</h2>
       </a>
       <nav>
         <ul>
-        <li><a href="index.html" class="selected">Portfolio</a></li>
-          <li><a href="http://michael-jas.github.io/blog/about.html">About</a></li><li><a href="portfolio">Portfolio</a></li>
-          <a href="http://michael-jas.github.io/blog/index.html">Blog</a></li>
+          <li><a href="http://michael-jas.github.io/about.html">About</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
+          <a href="http://michael-jas.github.io/blog/index.html" class="selected">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -45,14 +46,18 @@
 
        </section>
       <footer>
-        <a href="http://twitter.com/the_michael8"><img src="img/twitter-wrap.png" alt="Twitter Logo"
-                 class="social-icon">   </a>
-        </a>
-        <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US"> <img src="imgs/linkedin.png" class="social-icon"> </a>
+        <a href="http://twitter.com/the_michael8"><img src="../imgs/twitter.png" alt="Twitter Logo" class="social-icon"> </a>
+
+        <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US"> <img src="../imgs/linkedin.png" class="social-icon"> </a>
 
         <p>&copy; 2015 MJ</p>
       </footer>
      </div>
+     <script>
+        $(document).ready(function() {
+          $(document).foundation();
+        })
+      </script>
     </body>
 
 </html>
