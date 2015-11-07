@@ -188,7 +188,7 @@ background-image: url('../img/twitter.png')
 colors
 *****************/
 
-/*site body*/
+/*site body  #c9c9c9  */
 body {
 background-color: #c9c9c9;
   color: #4F4949;
@@ -204,6 +204,11 @@ background: #9ad3de;
 /*nav link*/
 nav a, nav a:visited {
  color: #fff;
+}
+
+/*Button Color*/
+.button{
+  background: red;
 }
 
 /*logo text*/
